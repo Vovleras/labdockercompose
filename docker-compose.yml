@@ -13,3 +13,8 @@ services:
     build: ./servicevictoria
     ports:
       - "5003:5003"
+
+  serviceemily:
+    build: ./serviceemily
+    ports:
+      - "5002:5002"

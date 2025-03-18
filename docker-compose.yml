@@ -9,4 +9,7 @@ services:
     ports:
       - "5001:5001"
 
-
+  servicevictoria:
+    build: ./servicevictoria
+    ports:
+      - "5003:5003"

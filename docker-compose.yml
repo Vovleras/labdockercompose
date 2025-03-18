@@ -14,7 +14,14 @@ services:
     ports:
       - "5003:5003"
 
+  servicesalome:
+    build: ./servicesalome
+    ports:
+      - "5005:5005"
+
+
   serviceemily:
     build: ./serviceemily
     ports:
       - "5002:5002"
+

@@ -24,4 +24,9 @@ services:
     build: ./serviceemily
     ports:
       - "5002:5002"
+  
+  serviceelkin:
+    build: ./serviceelkin
+    ports:
+      - "5010:5010"
 

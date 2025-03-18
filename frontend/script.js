@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const services = [
     { name: "Service 1", url: "http://localhost:5001/api" },
     { name: "Service 2", url: "http://localhost:5002/api" },
-    { name: "Service 3", url: "http://localhost:5003/api" },
+    { name: "Service Victoria", url: "http://localhost:5003/api" },
   ];
 
   const list = document.getElementById("services-list");

@@ -24,9 +24,17 @@ services:
     build: ./serviceemily
     ports:
       - "5002:5002"
-  
+      
+  serviceangie:
+    build: ./serviceangie
+    ports:
+      - "5006:5006"
+ 
   serviceandres:
     build: ./serviceandres
     ports:
       - "5007:5007"
+      
+ 
+
 

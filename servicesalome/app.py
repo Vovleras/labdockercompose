@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route("/api", methods=["GET"])
 def my_service():
-    return jsonify({"message": "Hello, from Salome (2242581) :)"})
+    return jsonify({"message": "Hello, from service Salome"})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5005)

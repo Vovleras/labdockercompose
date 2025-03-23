@@ -8,6 +8,11 @@ services:
     build: ./service1
     ports:
       - "5001:5001"
+      
+  serviceemily:
+    build: ./serviceemily
+    ports:
+      - "5002:5002"
 
   servicevictoria:
     build: ./servicevictoria
@@ -18,12 +23,11 @@ services:
     build: ./servicesalome
     ports:
       - "5005:5005"
-
-
-  serviceemily:
-    build: ./serviceemily
+  
+  servicemiguel:
+    build: ./servicemiguel
     ports:
-      - "5002:5002"
+      - "5045:5045"
       
   serviceangie:
     build: ./serviceangie

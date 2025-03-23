@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "Service Salome", url: "http://localhost:5005/api" },
     { name: "Service Elkin", url: "http://localhost:5010/api" },
     { name: "Service Angie", url: "http://localhost:5006/api" },
+    { name: "Service Andres", url: "http://localhost:5007/api" },
+    
+
   ];
 
   const list = document.getElementById("services-list");

@@ -42,3 +42,8 @@ services:
  
 
 
+  serviceelkin:
+    build: ./serviceelkin
+    ports:
+      - "5010:5010"
+

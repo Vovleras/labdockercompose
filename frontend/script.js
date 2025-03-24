@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "Service Victoria", url: "http://localhost:5003/api" },
     { name: "Service Salome", url: "http://localhost:5005/api" },
     { name: "Service Elkin", url: "http://localhost:5010/api" },
+    { name: "Service Miguel", url: "http://localhost:5045/api" },
     { name: "Service Angie", url: "http://localhost:5006/api" },
+    { name: "Service Andres", url: "http://localhost:5007/api" },
+    
   ];
 
   const list = document.getElementById("services-list");

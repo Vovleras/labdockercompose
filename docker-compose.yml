@@ -38,6 +38,11 @@ services:
     build: ./serviceandres
     ports:
       - "5007:5007"
+
+  servicesheila:
+    build: ./servicesheila
+    ports:
+      - "5009:5009"
       
  
 

@@ -19,6 +19,11 @@ services:
     ports:
       - "5003:5003"
 
+  servicealcantara:
+    build: ./servicealcantara
+    ports:
+      - "5004:5004"
+
   servicesalome:
     build: ./servicesalome
     ports:

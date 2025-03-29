@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "Service Angie", url: "http://localhost:5006/api" },
     { name: "Service Andres", url: "http://localhost:5007/api" },
     { name: "Service Sheila", url: "http://localhost:5009/api" },
-    { name: "Service Alcántara", url: "http://localhost:5004/api"}
+    { name: "Service Alcántara", url: "http://localhost:5004/api"},
     
   ];
 

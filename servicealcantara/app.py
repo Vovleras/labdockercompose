@@ -1,6 +1,8 @@
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 ASCII_ART = r"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣯⣾⣿⡿⢟⣿⠛⠉⠩⠁⠀⠀⡟⠁⠀⣀⠀⠀⠈⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠈⠢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -90,10 +92,16 @@ HTML_TEMPLATE = f"""
 </body>
 </html>
 """
+@app.route('/api', methods=['GET'])
+def servicio_alcantara():
+    accept_header = request.headers.get('Accept', '')
+    
+    if 'text/html' in accept_header:
+        return render_template_string(HTML_TEMPLATE)
+    else:
+        return jsonify({"message": "Hello, from service Alcantara"})
 
-@app.route('/api')
-def servicio_animado():
-    return render_template_string(HTML_TEMPLATE)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5004)

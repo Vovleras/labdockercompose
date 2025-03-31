@@ -33,7 +33,12 @@ services:
     build: ./servicemiguel
     ports:
       - "5045:5045"
-      
+
+  serviceleonardo:
+    build: ./serviceleonardo
+    ports:
+      - "5016:5016"
+
   serviceangie:
     build: ./serviceangie
     ports:
